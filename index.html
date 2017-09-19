@@ -5,17 +5,6 @@
 <head>
     <meta charset="UTF-8">
     <title>常志强的简历</title>
-	<script>
-		function downloadFile(fileName, content){
-		var aLink = document.createElement('a');
-		var blob = new Blob([content]);
-		var evt = document.createEvent("HTMLEvents");
-		evt.initEvent("click", false, false);//initEvent 不加后两个参数在FF下会报错, 感谢 Barret Lee 的反馈
-		aLink.download = fileName;
-		aLink.href = URL.createObjectURL(blob);
-		aLink.dispatchEvent(evt);
-	}
-	</script>
     <meta name="description" content="我是一个充满活力、对后端由衷热爱JAVAWEB工程师。目前寻求JAVA-WEB岗位，希望借此机会为贵公司能和一起共同进步！">
     <meta name="keywords" content="java web">
     <style type="text/css">
@@ -179,7 +168,7 @@
         </div>
     </div>
     <footer>
-        <p>Theme by changzhiqiang  Made by changzhiqiang. <a href="" download="MyResume.pdf"   target="_blank">PDF Download</a>. 最后更新于2017年9月19日</p>
+        <p>Theme by changzhiqiang  Made by changzhiqiang. <a href="MyResume.pdf" download  target="_blank" >PDF Download</a>. 最后更新于2017年9月19日</p>
     </footer>
 </body>
 </html>
