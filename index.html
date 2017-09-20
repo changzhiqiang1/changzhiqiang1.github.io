@@ -106,6 +106,23 @@
                     <h3><span>项目经验</span></h3>
                     <ul class="exp">
                       <div class="demo_line_02" style="margin-bottom:20px;"><span>JAVAEE 项目经验</span></div>
+                      
+					   <li>
+                            <div class="circle"></div>
+                            <h4>祥云玩具在线商城</h4>
+                            <p><strong>开发环境：</strong>MyEclipse10+Tomcat7.0
+                            </p>
+                            <p><strong>项目描述：</strong>整个系统包含二个子系统，分别是面向前端客户的商品交易系统，实现客户购买商品的需求；面向公司内部员工的办公系统，支付系统对接和邮件系统，实现业务订单处理及对站内各种信息进行管理的需求</p>
+							<p><strong>责任简介：</strong>按照教师布置任务完成支付接口调用以及返回结果展示</p>
+							<p><strong>技术要点：</strong></p>
+                            <ul>
+								<li>① 接入支付宝在线支付，网关发起支付请求，支付请求中包含已加密的商户的ID、商户的订单号、支付金额，请求发起前需要使用请求参数和商户的密钥采用MD5技术生成用户身份签名，并把用户身份签名作为请求参数发送给支付网关</li>
+								<li>② 支付完成后将支付状态存储到指令路径，将结果进行分析，导出excel表格</li>
+								<li>③ 支付完成后通过notify_url 返回结算成功界面</li>
+								<li>④ 同步将结果返回给客户，异步返回给商家的服务器，需要将服务器结果和客户端结果对比验证</li>
+							</ul>
+                        </li>
+                      <div class="demo_line_02" style="margin-bottom:20px;"></div>
                       <li>
                            <div class="circle"></div>
                            <h4>图书管理系统</h4>
@@ -127,21 +144,8 @@
 								<li>⑧ 每天凌晨自动统计书籍记录</li>
 						   </ul>
                        </li>
-                      <div class="demo_line_02" style="margin-bottom:20px;"></div>
-                       <li>
-                            <div class="circle"></div>
-                            <h4>图书管理系统轻量级版本</h4>
-                            <p><strong>开发环境：</strong>MyEclipse8.5+Tomcat6.0+Mysql+SpringMVC+Spring4+Mybatis
-                            </p>
-                            <p><strong>项目描述：</strong>由于当之前的图书管理形同使用Hibernate导致系统过于笨拙，目前学习到新技术Mybatis轻量级开发框架 将原系统升级为SSM版本</p>
-							<p><strong>技术要点：</strong></p>
-                            <ul>
-								<li>① 将原有的缓存优化转变为数据库SQL语句优化，创建存储过程触发器优化代码执行效率</li>
-								<li>② 将原有的JDBC直连换成C3P0数据库连接池</li>
-								<li>③ 将原有的Struts2换成SpringMVC更加简洁的开发代码</li>
-								<li>④ 新增智能数据分析管理，根据每日借出书数量查看应该购买图书</li>
-							</ul>
-                        </li>
+					   
+					   
                       
                         <div class="demo_line_02" style="margin-bottom:20px;"></div>
 						<div class="demo_line_02" style="margin-bottom:20px;"><span>JAVASE 项目经验</span></div>
