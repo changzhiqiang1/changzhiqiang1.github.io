@@ -33,10 +33,11 @@
             <ul class="side-info">
                 <li class="someRight">
                     <dt><i class="icon-bookmark"></i>Contact. 联系方式</dt>
-                    <dd><i class="icon-phone-1"></i>电话: 176-1117-1322</n></dd>
-                    <dd><i class="icon-mail-alt"></i>邮箱: changzhiqiang.top@gmail.com</dd>
+                    <dd><i class="icon-phone-1"></i>电话: 176-1117-1322</dd>
                     <dd><i class="icon-wechat"></i>微信: changzhiqiang_</dd>
                     <dd><i class="icon-qq"></i>QQ: 1439777198</a></dd>
+					<dd><i class="icon-mail-alt"></i>邮箱: changzhiqiang.top@gmail.com</dd>
+                    
                 </li>
                 <li class="someRight">
                     <dt><i class="icon-bookmark"></i>Application. 应聘岗位</dt>
@@ -90,10 +91,11 @@
 							3.  熟练掌握JAVA基础知识,对JVM底层运行算法有一定认知<br>
 							4.  熟练掌握MySql、Sqlserver、Oracle等开发应用<br>
 							5.	熟练掌握使用分表等数据库优化、SQL语句调优<br>
-							6.	熟练掌握Eclipse/MyEclipse开发工具，熟悉SVN、 CVS、VSS版本控制工具<br>
+							6.	熟练掌握Eclipse/MyEclipse开发工具<br>
 							7.	熟悉Tomcat、WebLogic应用服务器<br>
 							8.	熟悉Maven、Gradle管理项目的构建<br>
-							9.	了解 Linux 系统以及云计算平台搭建<br>
+							9.	熟悉git等版本控制工具的使用及原理<br>
+							10.	了解 Linux 系统以及云计算平台搭建<br>
                             </p>
                         </li>
                     </ul>
@@ -115,16 +117,16 @@
 							<p><strong>技术要点：</strong></p>
                             <ul>
 								<li>① 接入支付宝在线支付，网关发起支付请求，支付请求中包含已加密的商户的ID、商户的订单号、支付金额，请求发起前需要使用请求参数和商户的密钥采用MD5技术生成用户身份签名，并把用户身份签名作为请求参数发送给支付网关</li>
-								<li>② 支付完成后将支付状态存储到指令路径，将结果进行分析，导出excel表格</li>
-								<li>③ 支付完成后通过notify_url 返回结算成功界面</li>
-								<li>④ 同步将结果返回给客户，异步返回给商家的服务器，需要将服务器结果和客户端结果对比验证</li>
+								<li>② 发生付款时，封装订单信息,发送支付请求，用户扫描二维码后,解析从服务器接收到的响应json数据 </li>
+								<li>③ 发生退款时，将订单号和金额封装发起啊退款请求，解析返回的响应json 数据</li>
+								<li>④ 解析json数据后，将结果同步展示给客户端，异步传送至服务器，服务器存储订单信息至服务器</li>
 							</ul>
                         </li>
                       <div class="demo_line_02" style="margin-bottom:20px;"></div>
                       <li>
                            <div class="circle"></div>
                            <h4>图书管理系统</h4>
-                           <p><strong>开发环境：</strong>MyEclipse8.5+Tomcat6.0+Mysql+Struts2+Spring3+Hibernate3.3
+                           <p><strong>开发环境：</strong>MyEclipse10+Tomcat6.0+Mysql+Struts2+Spring3+Hibernate3.3
                            </p>
 						   <p><strong>项目描述：</strong>图书管理是帮助图书馆管理人员对图书信息的添加、删除和修改等，以及帮助读者对图书信息的检索，借阅情况的查询等的管理。
                            </p>
@@ -170,7 +172,7 @@
         </div>
     </div>
     <footer>
-        <p>Theme by changzhiqiang  Made by changzhiqiang. <a href="MyResume.pdf" download  target="_blank" >PDF Download</a>. 最后更新于2017年9月19日</p>
+        <p>Theme by changzhiqiang  Made by changzhiqiang. <a href="常志强的简历.pdf" download  target="_blank" >PDF Download</a>. 最后更新于2017年9月25日</p>
     </footer>
 </body>
 </html>
