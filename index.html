@@ -108,19 +108,19 @@
                       <div class="demo_line_02" style="margin-bottom:20px;"><span>JAVAEE 项目经验</span></div>
 					   <li>
 							<div class="circle"></div>
-                            <h4>小强博客管理系统</h4>
-                            <p><strong>开发环境：</strong>Eclipse + Gradle
+                            <h4>博客管理系统</h4>
+                            <p><strong>开发环境：</strong>Eclipse + SpringBoot + Gradle
                             </p>
-                            <p><strong>项目描述：</strong>整个系统包含管理员以及普通用户，模仿CSDN系统逻辑</p>
-							<p><strong>责任简介：</strong>完成后端所有代码书写以及前端Thymelea交互</p>
+                            <p><strong>项目描述：</strong>整个管理系统包含三个用户分类，未登录用户可以查看博客，根据关键字查询文章，普通账户可以留言，点赞博客以及未登录用户功能，管理员可以修改，删除用户信息</p>
+							<p><strong>责任简介：</strong>前端采用网络已有成型demo，后端代码全部自己独立完成</p>
 							<p><strong>技术要点：</strong></p>
                             <ul>
-								<li>① 搜索模块:博客检索采用ElasticSearch + SpringData 结合 保证检索效率</li>
-								<li>② 用户权限管理:采用SpringSecurity提供声明式的安全访问控制，指定模块允许响应权限访问</li>
-								<li>③ 前端设计:项目采用thymeleaf + bootstrap，提供使前后端分离，并兼容多平台</li>
-								<li>④ 数据库操作:使用SpringData几乎不用写jpql语句可以完成响应功能</li>
-								<li>⑤ 数据优化:采用MongoDB优化对非关系形数据处理</li>
-								<li>⑥ 项目架构:使用主流Gradle + Springboot 快速开发出企业级应用</li>
+								<li>① 搜索模块:博客检索采用ElasticSearch + SpringData，使海量数据也能快速检索</li>
+								<li>② 数据展示:使用Tmeleaf原型即模板，在不改变页面布局同时展示数据</li>
+								<li>③ 权限管理:使用SpringSecurity提供声明式事物管理，记住密码等操作</li>
+								<li>④ 数据管理:使用mysql + MongoDB 组合存储数据，将图片等存储于MongoDB服务器</li>
+								<li>⑤ 编译器:使用MarkDown插件书写博客，后台将MarkDown映射为HTML供展示使用</li>
+								<li>⑥ 用户安全:用户密码采用BCrytb加密，即使密码相同产生的密文依旧不同</li>
 							</ul>
 							</li>
                             <div class="circle"></div>
