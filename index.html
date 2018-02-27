@@ -46,9 +46,11 @@
             </ul>
             <div style="margin-top:20px" class="someRight">
 			<p><center><h3>自我介绍</h3></center></p>
-             <p> 一 ： 能够独立完成JAVAWEB项目从部署到运维, 善于与人沟通交流</p>
-			 <p> 二 ： 学习能力强，喜欢学习新技术，喜欢钻研源码</p>
-			 <p> 三 ： 团队合作能力优越，项目经理丰富，实践多个企业级项目</p>
+             <p> 一 ： 学习能力强，喜欢学习新技术，喜欢钻研源码，总结笔记，个人博客阅读量近2万</p>
+			 <p> 二 ： 通过gitchat平台知识分享平台组织超500人以上技术分享</p>
+			 <p> 三 ： 参与秒杀接口实战，有良好的并发编程思想，项目实战丰富，善于学习钻研</p>
+			 <p> 四 ： 对第三方支付(支付宝，微信，银联，快钱)，微信QQ互联等有实战经验</p>
+			 <p> 五 ： 团队合作能力优越，代码遵循阿里巴巴开发手册，使用编码规范插件检查规范代码</p>
 
             </div>
         </div>
@@ -59,7 +61,6 @@
                     <dd><strong>个人信息:</strong> <span>常志强 / 男</span></dd>
                     <dd><strong>学校信息:</strong> <span>吉林大学</span></dd>
 					<dd><strong>CSDN博客:</strong> <a href="http://blog.csdn.net/crpxnmmafq" target="_blank">blog.csdn.net/crpxnmmafq</a></dd>
-					<dd><strong>github地址:</strong> <a href="https://github.com/changzhiqiang1" target="_blank">github.com/changzhiqiang1</a></dd>
 				</li>
                 <li>
                     <dt><i class="icon-bookmark"></i>Skill. 技能清单</dt>
@@ -86,16 +87,15 @@
                             <div class="circle"></div>
                             <h4>简介</h4>
                             <p>
-                            1.  深入理解Spring的运行原理以及JVM生命周期<br>
-							2.  熟练掌握Springboot、Springmvc、Springdata、Springsecurity、Hibernate、Mybatis等开源框架<br>
-							3.  熟练掌握JAVAWEB开发技术，JAVA基础知识<br>
-							4.  熟练掌握MySql、Sqlserver、Oracle、MogoDB、H2等数据库技术<br>
-							5.	熟练掌握Eclipse/MyEclipse/IDEA等开发工具 <br>
-							6.	熟练掌握Eclipse/MyEclipse开发工具<br>
-							7.	熟练掌握Gradle、Maven管理项目的构建<br>
-							8.	熟悉Tomcat、WebLogic应用服务器<br>
-							9.	熟悉Linux 系统以及云计算平台搭建<br>
-							10.	了解分布式多用户的全文搜索引擎，并掌握ES使用<br>
+                            1.  深度认知Spring(IOC、AOP)运行原理,有JVM调优工作经验<br>
+							2.  熟练掌握Spring系列技术栈，对尤其擅长进行SpringBoot开发<br>
+							3.  熟练掌握MySql、MariaDB等关系型数据库调优措施<br>
+							4.  熟练掌握Redis、MogoDB等非关系数据配置使用<br>
+							5.	熟练掌握Gradle、Maven等项目构建工具 <br>
+							6.	熟练掌握git、svn等版本控制工具<br>
+							7.	熟悉ES全文索引使用<br>
+							8.	了解nginx服务器配置<br>
+							9.	了解Linux 系统以及云计算平台搭建<br>
                             </p>
                         </li>
                     </ul>
@@ -103,15 +103,52 @@
                 <li>
                     <dt><i class="icon-bookmark"></i>Information. 我的信息</dt>
                     
-                    <h3><span>个人项目</span></h3>
+                    <h3><span>项目经验</span></h3>
                     <ul class="exp">
-                      <div class="demo_line_02" style="margin-bottom:20px;"><span>个人项目</span></div>
+                      <div class="demo_line_02" style="margin-bottom:20px;"><span>企业项目</span></div>
+					   <li>
+							<div class="circle"></div>
+                            <h4>国安创客</h4>
+                            <p><strong>开发环境：</strong>STS + SpringBoot + Maven
+                            </p>
+							<p><strong>项目上线地址：</strong><a href="https://www.gack.citic/">https://www.gack.citic/</a></p>
+                            <p><strong>项目描述：</strong>该项目为中信集团子公司打造为中小微企业提供在企业服务的类服务网站</p>
+							<p><strong>责任简介：</strong>与设计整体逻辑架构，主要负责用户登录，注册，共享数据，第三方登录，订单以及秒杀服务逻辑设计，第三方数据查询代码实现</p>
+							<p><strong>技术要点：</strong></p>
+                            <ul>
+								<li>① 登录模块:为保证用户信息可以在不同业务逻辑共享，使用SpringBoot+Redis 的共享Session确保和多端登录获取的sessionId一致	</li>
+								<li>② 检索模块:负责技术迭代，将原来按照关键字查询更改为elasticsearch，依赖elasticsearch大幅度提高检索关键字速度</li>
+								<li>③ 微信互联：通过微信官网demo，通过获取在OAuth2.0认证过程中，向指定网址传入对应的appid来达到快捷登录的效果</li>
+								<li>④ 第三方数据查询:通过接入专利汇以及标库网相应api，来获取对应专利查询商标查询接口，后台做缓存措施，保证用查询体验</li>
+								<li>⑤ 秒杀接口:为保证秒杀接口承载大量并发，将秒杀接口单独部署服务器，并将订单号提前存储至redis数据库以保证订单号唯一，通过redis的watch来实现乐观锁，保证秒杀数据准确 </li>
+								
+							</ul>
+							</li>
+                            <div class="circle"></div>
+							<div class="demo_line_02" style="margin-bottom:20px;"></div>
+							<li>
+                            <div class="circle"></div>
+                            <h4>国安支付</h4>
+                            <p><strong>开发环境：</strong>Eclipse + SpringBoot + Maven
+                            <p><strong>项目描述：</strong>公司技术升级，有原来PHP的所实现的业务逻辑无法满足秒杀接口(使用排队措施暂时解决)，涉及支付方式支付宝(h5,二维码，APP)，微信（h5-微信公众号，h5-第三方浏览器，二维码，APP），快钱支付（PC,APP）</p>
+							<p><strong>责任简介：</strong>主要负责微信支付全部业务逻辑，业务逻辑代码优化，多线程调优</p>
+							<p><strong>技术要点：</strong></p>
+							<ul>
+								<li>① 接入微信h5-第三方浏览器需要注意将调用接口ip存入位置相关配置，如用户从wifi调起接口由于网络原因切换到移动网络支付将无法成功支付。需要将返回地址在服务器访问，展示给用户，需要使用域名访问而非ip等</li>
+								<li>② 微信内支付，为保证安全性，微信要求必须是80端口，而且用户重复提交需要5分钟内只能获取一次open_id </li>
+								<li>③ 由于微信内部保证支付安全，需要保证前端和后台部署到同一服务器的同一项目，原vue项目无法使用，使用template模板实现前台页面展示，并能成功掉起后台接口 </li>
+								<li>④ 每天有进千条待对账订单，使用php单线程方式对账需要10分钟左右，经过优化使用线程池方式，同时执行20条，目前对账约1分钟。</li>
+							</ul>
+
+                        </li>
+                      
+                      
+                        <div class="demo_line_02" style="margin-bottom:20px;"><span>个人项目</span></div>
 					   <li>
 							<div class="circle"></div>
                             <h4>博客管理系统</h4>
                             <p><strong>开发环境：</strong>Eclipse + SpringBoot + Gradle
                             </p>
-							<p><strong>项目已上线：</strong><a href="http://47.95.208.248/blogs">changzhiqiang.top</a></p>
 							<p><strong>项目已开源github地址：</strong><a href="https://github.com/changzhiqiang1/demo_blog">https://github.com/changzhiqiang1/demo_blog</a></p>
                             <p><strong>项目描述：</strong>整个管理系统包含三个用户分类，未登录用户可以查看博客，根据关键字查询文章，普通账户可以留言，点赞博客以及未登录用户功能，管理员可以修改，删除用户信息</p>
 							<p><strong>责任简介：</strong>前端采用网络已有成型demo，后端代码全部自己独立完成</p>
@@ -144,9 +181,7 @@
                         </li>
                       
                       
-                        <div class="demo_line_02" style="margin-bottom:20px;"></div>
-						
-						<div class="demo_line_02" style="margin-bottom:20px;"><span>项目实战</span></div>
+                        <div class="demo_line_02" style="margin-bottom:20px;"><span>项目实战</span></div>
 							<li>
 							<div class="circle"></div>
                             <h4>祥云玩具在线商城</h4>
@@ -171,7 +206,7 @@
         </div>
     </div>
     <footer>
-        <p><font size=5> <a href="常志强的简历.pdf" download  target="_blank" >点我下载 PDF版 简历 (#^.^#)</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最后更新于2017年10月11日</font></p>
+        <p><font size=5> <a href="常志强的简历.pdf" download  target="_blank" >点我下载 PDF版 简历 (#^.^#)</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最后更新于2018年2月25日</font></p>
     </footer>
 </body>
 </html>
